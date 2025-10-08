@@ -1,0 +1,114 @@
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - ask_motivation
+  - ask_course_benefits
+  - join_program
+  - affirm
+  - deny
+  - ask_program_info
+  - faq_how_do_i_create_an_account
+  - faq_i_forgot_my_password_what_should_i_do
+  - faq_can_i_use_the_same_account_on_multiple_devices
+  - faq_how_do_i_find_and_enroll_in_a_course
+  - faq_what_does_sequential_progression_mean
+  - faq_how_do_i_join_live_sessions
+  - faq_how_do_i_submit_an_assignment
+  - faq_what_is_the_pass_mark_for_ja_deep_modules
+  - faq_can_i_retake_quizzes_if_i_fail
+  - faq_how_do_i_earn_a_certificate
+  - faq_is_there_a_mobile_app_for_skillslab
+  - faq_what_browser_and_device_do_you_recommend
+  - faq_how_do_i_get_help_quickly
+  - faq_are_learners_under_18_allowed
+  - faq_what_languages_are_supported
+
+
+responses:
+  utter_greet:
+  - text: "👋 Hi there! Welcome to the JA DEEP Entrepreneurship Program. I'm here to help you learn about our courses and opportunities. What would you like to know more about?"
+
+  utter_goodbye:
+  - text: "Goodbye! 👋 Wishing you success on your entrepreneurial journey ahead."
+
+  utter_iamabot:
+  - text: "I’m JA Bot 🤖 — your virtual guide for the DEEP Entrepreneurship Program, powered by Rasa."
+
+  utter_deny:
+    - text: "No problem! Let me know if you change your mind or need help with something else."
+  
+  utter_ask_program_info:
+  - text: "Junior Achievement (JA) programs help students develop entrepreneurial, work-readiness, and financial literacy skills."
+
+  utter_ask_motivation:
+  - text: "That’s a great question! Think about your goals — Why are you taking this course? Asking yourself 'Why do I want to do this?' three times can help uncover your true motivation."
+
+  utter_ask_course_benefits:
+  - text: "This program is designed to help you develop entrepreneurial skills, build confidence, and learn how to turn your ideas into action. You’ll gain both business and leadership experience."
+
+  utter_join_program:
+  - text: "Our JA programs empower young entrepreneurs to learn, build, and grow. You can easily join online. Would you like me to share the registration link?"
+
+
+  utter_join_program_button:
+  - text: "Perfect! You can join the JA DEEP Program using the link below 👇"
+    buttons:
+      - title: "Register for JA"
+        payload: "https://staging-skillslab.ja-africa.org/login/index.php"
+
+
+  utter_faq_how_do_i_create_an_account:
+  - text: "Preferred: Your facilitator/admin will create your account through a bulk upload and you’ll receive a welcome email. Optional: If you use 'Create new account' on https://skillslab.ja-africa.org/login or Sign in with Google, please complete your profile using your real name (for certificates). See Q2 to ensure you’re added to the right cohort and courses."
+
+  utter_faq_i_forgot_my_password_what_should_i_do:
+  - text: "Click 'Log in → Forgotten your username or password?' on the site. If your registered email is inaccessible, contact support with verification details."
+
+  utter_faq_can_i_use_the_same_account_on_multiple_devices:
+  - text: "Yes—both web and the Moodle App are supported. Just don’t share your password."
+
+  utter_faq_how_do_i_find_and_enroll_in_a_course:
+  - text: "If your account was uploaded by an admin, you’re often auto-enrolled into the Baseline Assessment and first module. You can also browse Site home → Course categories or Search courses. Some courses allow self-enrolment."
+
+  utter_faq_what_does_sequential_progression_mean:
+  - text: "You must meet the completion criteria (usually ≥60% on the quiz) before the next module appears. Check course completion checkmarks; when they turn green, the next module unlocks."
+
+  utter_faq_how_do_i_join_live_sessions:
+  - text: "Open activities labeled 'Live Class' (e.g., Zoom, Teams, BigBlueButton) and join at the scheduled time. Test mic and camera beforehand."
+
+  utter_faq_how_do_i_submit_an_assignment:
+  - text: "Open the assignment, read the instructions, click 'Add submission', upload your file, then 'Save changes' and 'Submit' if required."
+
+  utter_faq_what_is_the_pass_mark_for_ja_deep_modules:
+  - text: "Each of the 8 modules requires at least 60% on the quiz/test to proceed to the next module. The Baseline Assessment has no passmark—it’s for benchmarking."
+
+  utter_faq_can_i_retake_quizzes_if_i_fail:
+  - text: "Yes. You can retake quizzes and the final Knowledge Assessment until you pass (unless your facilitator limits attempts)."
+
+  utter_faq_how_do_i_earn_a_certificate:
+  - text: "1. Complete Baseline Assessment (no passmark). 2. Pass each JA-DEEP module with ≥60%. 3. Pass the final Knowledge Assessment. Once complete, your certificate will be available to download."
+
+  utter_faq_is_there_a_mobile_app_for_skillslab:
+  - text: "Yes. Install the Moodle App (Android/iOS). When prompted, enter the SkillsLab site URL and log in with your credentials."
+
+  utter_faq_what_browser_and_device_do_you_recommend:
+  - text: "We recommend the latest versions of Chrome, Edge, Firefox, or Safari, with at least 4GB RAM and a stable 1–2 Mbps connection."
+
+  utter_faq_how_do_i_get_help_quickly:
+  - text: "Ask in your course forum first, check Announcements, or contact support via email or Helpdesk. For urgent concerns, use the WhatsApp Helpline."
+
+  utter_faq_are_learners_under_18_allowed:
+  - text: "Yes—some courses serve minors through schools or partners, following safeguarding and consent protocols."
+
+  utter_faq_what_languages_are_supported:
+  - text: "SkillsLab supports English and French. You can change your language via Profile → Preferences → Preferred language."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+
+

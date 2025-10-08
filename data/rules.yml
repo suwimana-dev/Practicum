@@ -1,0 +1,6 @@
+version: "3.1"
+rules:
+  - rule: respond to FAQs
+    steps:
+      - intent: faq_how_do_i_create_an_account
+      - action: utter_faq_how_do_i_create_an_account

@@ -1,0 +1,136 @@
+version: "3.1"
+
+stories:
+  - story: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  
+  - story: user denies
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - story: bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - story: ask program info
+    steps:
+      - intent: ask_program_info
+      - action: utter_ask_program_info
+
+  - story: ask motivation
+    steps:
+      - intent: ask_motivation
+      - action: utter_ask_motivation
+
+  - story: ask course benefits
+    steps:
+      - intent: ask_course_benefits
+      - action: utter_ask_course_benefits
+
+  - story: join JA program
+    steps:
+      - intent: join_program
+      - action: utter_join_program
+      - intent: affirm
+      - action: utter_join_program_button
+
+  - story: motivation then benefits
+    steps:
+      - intent: ask_motivation
+      - action: utter_ask_motivation
+      - intent: ask_course_benefits
+      - action: utter_ask_course_benefits
+
+  - story: greet then join program
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: join_program
+      - action: utter_join_program
+      - intent: affirm
+      - action: utter_join_program_button
+
+  # --- FAQ Stories ---
+  - story: faq how do i create an account
+    steps:
+      - intent: faq_how_do_i_create_an_account
+      - action: utter_faq_how_do_i_create_an_account
+
+  - story: faq forgot my password
+    steps:
+      - intent: faq_i_forgot_my_password_what_should_i_do
+      - action: utter_faq_i_forgot_my_password_what_should_i_do
+
+  - story: faq same account on multiple devices
+    steps:
+      - intent: faq_can_i_use_the_same_account_on_multiple_devices
+      - action: utter_faq_can_i_use_the_same_account_on_multiple_devices
+
+  - story: faq find and enroll in a course
+    steps:
+      - intent: faq_how_do_i_find_and_enroll_in_a_course
+      - action: utter_faq_how_do_i_find_and_enroll_in_a_course
+
+  - story: faq sequential progression
+    steps:
+      - intent: faq_what_does_sequential_progression_mean
+      - action: utter_faq_what_does_sequential_progression_mean
+
+  - story: faq join live sessions
+    steps:
+      - intent: faq_how_do_i_join_live_sessions
+      - action: utter_faq_how_do_i_join_live_sessions
+
+  - story: faq submit assignment
+    steps:
+      - intent: faq_how_do_i_submit_an_assignment
+      - action: utter_faq_how_do_i_submit_an_assignment
+
+  - story: faq pass mark for JA DEEP
+    steps:
+      - intent: faq_what_is_the_pass_mark_for_ja_deep_modules
+      - action: utter_faq_what_is_the_pass_mark_for_ja_deep_modules
+
+  - story: faq retake quizzes
+    steps:
+      - intent: faq_can_i_retake_quizzes_if_i_fail
+      - action: utter_faq_can_i_retake_quizzes_if_i_fail
+
+  - story: faq earn certificate
+    steps:
+      - intent: faq_how_do_i_earn_a_certificate
+      - action: utter_faq_how_do_i_earn_a_certificate
+
+  - story: faq mobile app for skillslab
+    steps:
+      - intent: faq_is_there_a_mobile_app_for_skillslab
+      - action: utter_faq_is_there_a_mobile_app_for_skillslab
+
+  - story: faq browser and device recommendation
+    steps:
+      - intent: faq_what_browser_and_device_do_you_recommend
+      - action: utter_faq_what_browser_and_device_do_you_recommend
+
+  - story: faq get help quickly
+    steps:
+      - intent: faq_how_do_i_get_help_quickly
+      - action: utter_faq_how_do_i_get_help_quickly
+
+  - story: faq learners under 18 allowed
+    steps:
+      - intent: faq_are_learners_under_18_allowed
+      - action: utter_faq_are_learners_under_18_allowed
+
+  - story: faq what languages are supported
+    steps:
+      - intent: faq_what_languages_are_supported
+      - action: utter_faq_what_languages_are_supported

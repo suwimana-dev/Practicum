@@ -1,0 +1,174 @@
+---
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - good morning
+      - good evening
+      - hey there
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you around
+      - see you later
+      - talk to you soon
+      - catch you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - absolutely
+
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: ask_motivation
+    examples: |
+      - why am I here?
+      - what is my motivation for taking this course?
+      - how will this course help me?
+      - why should I take this course?
+      - what will I gain from this course?
+
+  - intent: ask_course_benefits
+    examples: |
+      - what will I get out of this course?
+      - what skills will I gain?
+      - what benefits does this course offer?
+      - what do I learn in this course?
+
+  - intent: join_program
+    examples: |
+      - how do I join a JA program?
+      - how can I register for JA?
+      - sign me up for JA
+      - where can I register for the JA program?
+      - I want to register for JA
+      - how do I enroll in JA?
+
+  - intent: ask_program_info
+    examples: |
+      - what is JA program
+      - what is the JA DEEP program
+      - tell me about the JA program
+      - what does the JA DEEP Entrepreneurship Program do?
+      - what is JA
+      - can you explain the JA program?
+      - what is the JA DEEP program about?
+
+  # ---------------------- FAQ Intents ----------------------
+
+  - intent: faq_how_do_i_create_an_account
+    examples: |
+      - how do I create an account?
+      - how can I register for SkillsLab?
+      - how do I sign up for JA DEEP?
+      - can I make my own account?
+
+  - intent: faq_i_forgot_my_password_what_should_i_do
+    examples: |
+      - I forgot my password
+      - how can I reset my password?
+      - I can’t remember my login
+      - how do I recover my password?
+
+  - intent: faq_can_i_use_the_same_account_on_multiple_devices
+    examples: |
+      - can I use my account on more than one device?
+      - can I log in on my phone and laptop?
+      - can I use the same account on multiple devices?
+
+  - intent: faq_how_do_i_find_and_enroll_in_a_course
+    examples: |
+      - how can I find a course?
+      - where do I enroll for courses?
+      - how do I access modules in JA DEEP?
+
+  - intent: faq_what_does_sequential_progression_mean
+    examples: |
+      - what does sequential progression mean?
+      - do I need to complete one module before the next?
+      - what is course progression?
+
+  - intent: faq_how_do_i_join_live_sessions
+    examples: |
+      - how do I join a live session?
+      - where can I find live classes?
+      - how do I attend a Zoom or Teams meeting?
+
+  - intent: faq_how_do_i_submit_an_assignment
+    examples: |
+      - how do I submit an assignment?
+      - how do I upload my work?
+      - where do I turn in my homework?
+
+  - intent: faq_what_is_the_pass_mark_for_ja_deep_modules
+    examples: |
+      - what is the pass mark for JA DEEP?
+      - how much do I need to score to pass?
+      - what grade do I need to move to the next module?
+
+  - intent: faq_can_i_retake_quizzes_if_i_fail
+    examples: |
+      - can I retake quizzes if I fail?
+      - what happens if I fail a test?
+      - can I try again after failing?
+
+  - intent: faq_how_do_i_earn_a_certificate
+    examples: |
+      - how do I get a certificate?
+      - when will I receive my certificate?
+      - what do I need to complete for the certificate?
+
+  - intent: faq_is_there_a_mobile_app_for_skillslab
+    examples: |
+      - is there a mobile app?
+      - can I learn from my phone?
+      - how can I use SkillsLab on mobile?
+
+  - intent: faq_what_browser_and_device_do_you_recommend
+    examples: |
+      - what browser works best for SkillsLab?
+      - which device should I use?
+      - what are the technical requirements?
+
+  - intent: faq_how_do_i_get_help_quickly
+    examples: |
+      - how do I get help fast?
+      - where can I contact support?
+      - how do I ask for assistance?
+
+  - intent: faq_are_learners_under_18_allowed
+    examples: |
+      - can learners under 18 join JA DEEP?
+      - are minors allowed?
+      - can high school students enroll?
+
+  - intent: faq_what_languages_are_supported
+    examples: |
+      - what languages are available?
+      - is the program offered in French?
+      - can I change the site language?
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you real?
+      - am I talking to a human?
+      - who made you?
