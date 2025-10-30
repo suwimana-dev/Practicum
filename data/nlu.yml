@@ -19,6 +19,7 @@ nlu:
       - see you later
       - talk to you soon
       - catch you later
+      - Thank you, bye
 
   - intent: affirm
     examples: |

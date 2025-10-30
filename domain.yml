@@ -104,6 +104,10 @@ responses:
   utter_faq_what_languages_are_supported:
   - text: "SkillsLab supports English and French. You can change your language via Profile → Preferences → Preferred language."
 
+actions:
+  - action_translate_and_respond
+
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

@@ -2,3 +2,7 @@ __pycache__
 Practicum
 models
 .rasa
+# Ignore virtual environment
+rasa_env/
+venv/
+.env
